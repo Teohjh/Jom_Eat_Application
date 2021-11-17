@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Jom_Eat_2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#ff0000</item>
+        <item name="colorPrimaryVariant">#fc0c00</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="bottomS" parent = "Theme.Design.BottomSheetDialog">
+        <item name="background">@style/bottomSTheme</item>
+    </style>
+
+    <style name="bottomSTheme" parent="Widget.Design.BottomSheet.Modal">
+        <item name="background">@android:color/transparent</item>
+    </style>
+</resources>

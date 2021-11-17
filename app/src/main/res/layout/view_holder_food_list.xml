@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/food_list_card">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="70dp"
+            android:layout_toEndOf="@+id/imageView12"
+            android:text="Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_food_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_food_hours"
+            android:layout_alignBottom="@+id/imageView12"
+            android:layout_marginEnd="-11dp"
+            android:layout_marginBottom="5dp"
+            android:text="Review"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_food_hours" />
+
+        <ImageView
+            android:id="@+id/img_food_next_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="199dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@+id/imageView12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.482"
+            app:srcCompat="@drawable/food_next" />
+
+        <TextView
+            android:id="@+id/tv_food_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_alignBottom="@+id/imageView12"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="38dp"
+            android:layout_toEndOf="@+id/imageView12"
+            android:text="hours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/tv_food_name" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="144dp"
+            android:layout_height="134dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/western_chicken_chop" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "895207203661",
+    "firebase_url": "https://jomeatdatabase-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "jomeatdatabase",
+    "storage_bucket": "jomeatdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895207203661:android:936a1637b50adbb6c98d04",
+        "android_client_info": {
+          "package_name": "com.example.jom_eat_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895207203661-h6sbdmcu8fg3p9qqt6ek092ft51lfu92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaVLNcJPrpqfh2JhUV7YYrJysfksyPEPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895207203661-h6sbdmcu8fg3p9qqt6ek092ft51lfu92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

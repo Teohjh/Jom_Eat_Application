@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/food_list_card"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_foodImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/tv_foodTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_foodImage"
+            android:text="Title"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/img_food_detail"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="203dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@+id/iv_foodImage"
+            app:srcCompat="@drawable/food_next" />
+
+        <TextView
+            android:id="@+id/tv_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_review"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/iv_foodImage"
+            android:text="Hours : " />
+
+        <TextView
+            android:id="@+id/tv_hours_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_hours"
+            android:layout_alignBottom="@+id/tv_hours"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/tv_hours"
+            android:text="hour" />
+
+        <TextView
+            android:id="@+id/tv_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_foodImage"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/iv_foodImage"
+            android:text="Review"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_review_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_review"
+            android:layout_alignBottom="@+id/tv_review"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toEndOf="@+id/tv_review"
+            android:text="review" />
+
+        <TextView
+            android:id="@+id/tv_food_list_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_food_list_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_food_list_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

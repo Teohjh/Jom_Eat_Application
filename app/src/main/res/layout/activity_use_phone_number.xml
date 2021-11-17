@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsePhoneNumber"
+    android:background="@drawable/background_image1">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toStartOf="@id/gd_right"
+        app:layout_constraintStart_toStartOf="@id/gd_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_jom_eat" />
+
+    <TextView
+        android:id="@+id/otpVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="16dp"
+        android:text="OTP VERIFICATION"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/gd_right"
+        app:layout_constraintStart_toStartOf="@id/gd_left"
+        app:layout_constraintTop_toBottomOf="@id/imageView_logo" />
+
+    <EditText
+        android:id="@+id/countryCodePicker"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="977"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintStart_toStartOf="@+id/gd_left"
+        app:layout_constraintTop_toBottomOf="@+id/otpVerification" />
+
+    <EditText
+        android:id="@+id/et_phoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toStartOf="@+id/gd_right"
+        app:layout_constraintStart_toEndOf="@+id/countryCodePicker"
+        app:layout_constraintTop_toBottomOf="@+id/otpVerification" />
+
+    <Button
+        android:id="@+id/btn_requestOTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="16dp"
+        android:text="Request OTP"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/gd_right"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gd_left"
+        app:layout_constraintTop_toBottomOf="@+id/et_phoneNumber" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="Verify"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/gd_right"
+        app:layout_constraintStart_toStartOf="@+id/gd_left"
+        app:layout_constraintTop_toBottomOf="@+id/et_otpNumber" />
+
+    <Button
+        android:id="@+id/btn_resend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:text="Resend"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/gd_right"
+        app:layout_constraintStart_toStartOf="@+id/gd_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_verify" />
+
+    <EditText
+        android:id="@+id/et_otpNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter OTP Number"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/gd_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gd_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_requestOTP" />
+
+    <View
+        android:id="@+id/footer_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="#E5E7E9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account ?"
+        android:textColor="#34495E "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/footer_line" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
